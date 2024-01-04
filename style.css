@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  overflow: auto;
+}
+
+.benefitsText p {
+  flex: 1;
+  font-size: 17px;
+}
+
+.benefitsText button {
+  padding: 10px 15px 10px 15px;
+}
+@media only screen and (max-width: 678px) {
+  .benefitsText button {
+    margin-right: auto;
+  }
+}
+
+.cards .card span {
+  font-size: 50px;
+  text-align: end;
+}
+
+.card .imgCard {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 678px) {
+  .textCard {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.cardsOur img {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 678px) {
+  .cardsOur img {
+    width: 95%;
+    height: 95%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.cardsOur span {
+  margin-left: auto;
+}
+@media only screen and (max-width: 678px) {
+  .cardsOur span {
+    margin-left: 30px;
+  }
+}
+
+.imgTestimonials {
+  width: 50px;
+  height: 50px;
+}
+
+.partTestimonials {
+  height: 90px;
+  background-color: #F1F1F3;
+}
+
+.pricing-section .btn-div {
+  background-color: #fff;
+  width: 190px;
+  height: 50px;
+  margin-left: auto;
+}
+@media only screen and (max-width: 678px) {
+  .pricing-section .btn-div {
+    margin: auto;
+    margin-top: 5px;
+  }
+}
+
+.pricing-section .btn-div span {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.pricing-section .btn-pricing {
+  background-color: orange;
+  width: 88px;
+  height: 37px;
+  margin-left: 10px;
+}
+
+.pricing-section .cardPricing h3 {
+  background-color: #FFEACC;
+  padding: 10px;
+}
+
+.pricing-section .cardPricing span {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.pricing-section .cardPricing span:before {
+  content: "$";
+  font-size: 66px;
+  left: 215px;
+  top: 75px;
+}
+
+.pricing-section .cardPricing span::after {
+  content: "/month";
+  font-size: 14px;
+  left: 290px;
+  top: 129px;
+}
+
+.pricing-section .cardPricing p {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.pricing-section .cardPricing .btn-getStart {
+  background-color: orange;
+}
+
+@media only screen and (max-width: 678px) {
+  .divContainer {
+    flex-direction: column;
+  }
+}
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 46px;
+  height: 44px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  animation: svgArrow 1.9s infinite;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes svgArrow {
+  0%, 20%, 50%, 80%, 100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fqa-section .accordion-item button img {
+  width: 30px;
+  height: 30px;
+}
+
+.accordion-body {
+  width: 90%;
+}
+
+.rr {
+  width: 87%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(140px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.courses-section .benefitsText img {
+  width: 100%;
+  height: 80%;
+}
+
+.courses-section .text-table {
+  border-right: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 678px) {
+  .table {
+    border-bottom: 1px solid #ccc;
+  }
+  .courses-section .text-table {
+    border-bottom: 1px solid #ccc;
+    border-right: 0;
+  }
+}
+.aboutUs-section .card img {
+  width: 45px;
+  height: 45px;
+}
+
+.pricing-section .colFrom {
+  padding-right: 50px;
+  border-right: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 678px) {
+  .pricing-section .colFrom {
+    border-right: 0;
+    margin-bottom: 40px;
+    padding-right: 0;
+  }
+  .pricing-section .colFrom button {
+    width: 100%;
+    margin: auto;
+  }
+}
+.pricing-section .aaa p {
+  width: fit-content;
+  display: block;
+}
+
+.pricing-section .colFrom button {
+  background-color: orange;
+}
+
+.loginPage .loginForm .btnLogin {
+  background-color: orange;
+}
+
+.loginPage .loginForm .ss::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.loginPage .loginForm .ss::after {
+  content: "OR";
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  height: 0px;
+  background-color: black;
+}
+
+.loginPage .btn-directions {
+  text-align: end;
+}
+
+@media only screen and (max-width: 678px) {
+  .loginPage .btn-directions {
+    text-align: center;
+  }
+}
+.hero-section {
+  padding-top: 110px;
+}
+
+.hero-section .sub-container .icon-decoration {
+  height: 40px;
+  position: absolute;
+  left: -27px;
+  bottom: 59px;
+}
+
+.hero-section .sub-container {
+  width: fit-content;
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+.hero-section .parg {
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+.hero-section .sub-container span {
+  color: orange;
+}
+
+.hero-section .sub-container img {
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
+}
+
+.hero-section .btn-explore {
+  background-color: orange;
+}
+
+.hero-section .video-container img {
+  padding-top: 70px;
+  width: 100%;
+  height: 50%;
+}
+
+@media only screen and (max-width: 678px) {
+  .hero-section {
+    padding-top: 80px;
+  }
+  .hero-section .sub-container {
+    width: 90%;
+  }
+  .hero-section .sub-container h1 {
+    font-size: 19px;
+  }
+  .hero-section .parg p {
+    width: 272px;
+    margin-left: 46px;
+    font-size: 15px;
+  }
+  .hero-section .sub-container .icon-decoration {
+    width: 20px;
+  }
+  .hero-section .sub-container .icon-decoration {
+    height: 40px;
+    position: absolute;
+    left: -13px;
+    bottom: 39px;
+  }
+}
+.top-Banner {
+  background-color: orange;
+  height: 36px;
+  width: 94%;
+}
+
+.logo img {
+  width: 33px;
+  height: 33px;
+}
+@media only screen and (max-width: 678px) {
+  .logo img {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+header li {
+  position: relative;
+  margin-right: 18px;
+}
+
+header li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 3px solid orange;
+  background-color: orange;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header li a:hover::after {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+header li .active::after {
+  transform: scaleX(1);
+}
+
+header .buttons-container {
+  width: 160px;
+}
+@media only screen and (max-width: 678px) {
+  header .buttons-container {
+    flex: 1;
+    text-align: end;
+  }
+}
+
+header .buttons-container button {
+  background-color: orange;
+  color: #fff;
+  margin-left: 12px;
+  width: 90px;
+  height: 40px;
+}
+@media only screen and (max-width: 678px) {
+  header .buttons-container button {
+    width: 70px;
+  }
+}
+
+header .buttons-container button:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 678px) {
+  header ul li {
+    margin: auto;
+  }
+  header .buttons-container {
+    text-align: center;
+  }
+  header .navbar-toggler {
+    position: relative;
+    right: 17px;
+    top: 60px;
+    outline: 0;
+    width: 30px;
+    height: 26px;
+    border: none;
+  }
+  header .navbar-toggler:focus {
+    outline: 0;
+  }
+  .navbar-toggler span {
+    position: absolute;
+    background-color: orange;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  .navbar-toggler span:first-child {
+    top: 0;
+  }
+  .navbar-toggler:hover span:first-child {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  }
+  .navbar-toggler span:nth-child(2) {
+    width: 70%;
+    top: 50%;
+    left: 8px;
+  }
+  .navbar-toggler:hover span:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar-toggler span:last-child {
+    width: 50%;
+    left: 14px;
+    bottom: 0px;
+  }
+  .navbar-toggler:hover span:last-child {
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+  }
+}
+.swiper {
+  width: 100px;
+  height: 70px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 90%;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.185);
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 678px) {
+  .swiper {
+    align-items: center;
+    width: 90%;
+  }
+  .swiper-slide img {
+    width: 100%;
+    padding: 10px;
+  }
+}
